@@ -1,11 +1,12 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Dosu",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/icons/dosu.svg",
+    "light": "/icons/dosu.svg"
   },
-  "favicon": "/favicon.svg",
+  "theme": "prism",
+  "favicon": "icons/favicon.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -18,74 +19,37 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://cal.com/team/dosu-partners/chat-with-the-dosu-team"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "App",
+    "url": "app.dosu.dev"
   },
-  "tabs": [
+  "navigation": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "group": "Home",
+      "pages": [
+        "home/introduction",
+        "home/onboarding",
+        "home/features",
+        {
+          "group": "Configuration",
+          "pages": [
+            "home/configuration/overview",
+            "home/configuration/github"
+          ]
+        },
+        "home/faqs"
+      ]
     }
   ],
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/dosu_ai",
+    "linkedin": "https://www.linkedin.com/company/dosu-ai/",
+    "github": "https://github.com/dosu-ai/dosu",
+    "slack": "https://cal.com/team/dosu-partners/chat-with-the-dosu-team"
   }
 }
