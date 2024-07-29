@@ -16,31 +16,70 @@
       "to": "#07C983"
     }
   },
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "app.dosu.dev"
+  },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Community",
       "url": "https://cal.com/team/dosu-partners/chat-with-the-dosu-team"
     }
   ],
-  "topbarCtaButton": {
-    "name": "App",
-    "url": "app.dosu.dev"
-  },
   "navigation": [
     {
       "group": "Home",
       "pages": [
-        "home/introduction",
-        "home/onboarding",
-        "home/features",
+        "docs/introduction",
         {
-          "group": "Configuration",
+          "group": "Onboarding",
           "pages": [
-            "home/configuration/overview",
-            "home/configuration/github"
+            "docs/onboarding-overview",
+            "docs/onboarding-quickstart",
+            "docs/onboarding-configuration"
           ]
         },
-        "home/faqs"
+        {
+          "group": "Features",
+          "pages": [
+            "docs/auto-labeling",
+            "docs/issue-triage",
+            "docs/discussion-answering",
+            "docs/changelog-generation"
+          ]
+        },
+        "docs/settings",
+        "docs/faqs"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "Create a Workspace",
+        "Dosu Previews"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        {
+          "group": "GitHub",
+          "icon": "github",
+          "pages": [
+            "docs/github-installation",
+            "docs/github-features",
+            "docs/github-settings"
+          ]
+        },
+        {
+          "group": "Slack",
+          "icon": "slack",
+          "pages": [
+            "docs/slack-installation",
+            "docs/slack-features",
+            "docs/slack-settings"
+          ]
+        }
       ]
     }
   ],
