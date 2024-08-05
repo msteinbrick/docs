@@ -1,0 +1,66 @@
+---
+title: "GitHub Repository"
+description: The guide below will walk you through creating a workspace for a GitHub repository.
+---
+
+<Note>
+This guide assumes you've already created an account and have access to the [app](app.dosu.dev).
+</Note>
+
+## 1. Create Workspace
+On the left hand navigation bar you should see "Workspaces".
+This page will display all of your organization's workspaces, but first we'll have to create one! Select "Create workspace".
+![Workspace Guide 1](/images/workspace-guide-1.png)
+
+## 2. Select Target
+You should see the page below once you've started the workspace creation flow. 
+If you've not yet installed the Dosu GitHub app, you'll notice there are no repostiories to choose from.
+
+If that's the case, you can click either of the links below to do so.
+![Workspace Guide 2](/images/workspace-guide-2.png)
+
+You'll be brought to the GitHub app installation page for Dosu where you can select all or some subset of your repositories to install Dosu on.
+For more information on installing apps see Github's [About using GitHub Apps](https://docs.github.com/en/apps/using-github-apps/about-using-github-apps) documentation.
+
+![Workspace Guide 3](/images/workspace-guide-3.png)
+
+Back on the select taget page, you should now see the repositories you've installed Dosu on.
+Selecting one of the repositories should display the "Customize" and "Deploy" buttons at the bottom of the screen.
+![Work 4](/images/workspace-guide-4.png)
+
+Selecting "Deploy" will finish creating your workspace using the default configuration options.
+For this guide, we'll select "Customize" instead to set up the configurations manually.
+
+## 3. Data Sources
+The data sources step allows you to select which data sources the workspace has access to. 
+Here you can link any additional repositories or documentation that might be useful in answering questions about your codebase.
+
+For repository workspaces the repository itself is automatically added as a data source. 
+For this guide, we'll select no additional data sources and move on to configuration.
+![Work 5](/images/workspace-guide-5.png)
+
+## 4. Configure
+The configuration step allows you to to customize how Dosu will behave on the workspace.
+Each setting has a short explanation of what it does in the UI, but for a more detailed explanation of each setting, see the [GitHub Workspace Configuration](/docs/github-configuration) page.
+
+## 5. Review & Deploy
+Once you're through the configuration steps you should see a final page where you can review the workspace's configuration.
+If everything looks good, select "Deploy" to finish creating the workspace.
+
+![Work 6](/images/workspace-guide-6.png)
+
+Congratulations! You've finished creating your first workspace.
+You should now see your created workspace on the [Workspaces](app.dosu.dev/workspaces) page.
+
+![Work 7](/images/workspace-guide-7.png)
+
+## 6. Usage
+Once you're off the waitlist and your workspace's data sources are done indexing you'll the status color update to green, indicating your deployment is active.
+
+![Work 8](/images/workspace-guide-8.png)
+
+Now, Dosu should be active on your repository and will take actions given your specific workspace configurations.
+
+The example below shows a new issue filed for the example repository created for this guide.
+
+![Work 9](/images/workspace-guide-9.png)

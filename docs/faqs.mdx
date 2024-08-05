@@ -3,10 +3,10 @@ title: 'FAQs'
 description: 'Frequently Asked Questions'
 ---
 
-## How does Dosu work?
+<Accordion title="How does Dosu work?">
+  Dosu works by intelligently retrieving and reasoning over the the relevant context of technical questions. Dosu builds understanding through past experience and has been specifically tailored for the workflows it’s deployed for.
+</Accordion>
 
-Dosu works by intelligently retrieving and reasoning over the the relevant context of technical questions. Dosu builds understanding through past experience and has been specifically tailored for the workflows it’s deployed for.
-
-## How does data flow through Dosu?
-
-Dosu creates embeddings from the information it’s given access to, and stores those embedding in a vector database. When Dosu responds to user queries, it gathers information by retrieving the embeddings related to the user query and reasons over that information. Aside from API calls to LLM providers and data stored in Supabase hosted Postgres, no data leaves the Dosu Google Cloud Provider VPC.
+<Accordion title="How does data flow through Dosu?">
+  Dosu creates embeddings from the information it’s given access to, and stores those embedding in a vector database. When Dosu responds to user queries, it gathers information by retrieving the embeddings related to the user query and reasons over that information. Aside from API calls to LLM providers and data stored in Supabase hosted Postgres, no data leaves the Dosu Google Cloud Provider VPC.
+</Accordion>

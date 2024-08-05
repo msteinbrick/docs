@@ -1,0 +1,111 @@
+---
+title: 'Configuration'
+description: This page details the configuration options available for GitHub workspaces.
+---
+
+## Details
+![1](/images/github-config-1.png)
+The details page provides Dosu with additional inforamation about your repository and 
+allows you to set certain metadata for the workspace.
+- The **Name** field is simply the value that will be displayed for your workspace in the app.
+- The **Default maintainer** will be tagged on issues that require further assistance.
+- The **Desciption** field gives Dosu extra context on the repository.
+- The **Settings** section allows you to pause, resume, or delete the workspace.
+
+## Issues
+![1](/images/github-config-2.png)
+The "Issues" settings deteremine how Dosu will behave on the repository's issues.
+
+### Auto-Label Issues
+These settings determine if Dosu will auto-label issues and which labels it will consider.
+![3](/images/github-config-3.png)
+
+
+Dosu will only consdier applying a label to a new issue if the label is selected (indicated by the checkbox on the left of the label's name), and if a label is not selected Dosu will **never** apply that label to an issue.
+
+Dosu will determine which labels it applies to a new issue based on issue's title and the description and 
+the labels applied to similar past issues.
+
+It's recommeded to leave unselected labels which Dosu will not have context on based on the issue itself such as organizational labels
+(eg. `org:team-name`, `sprint-number:132`) or workflow labels (eg. `status:wont-fix`).
+
+<Note>
+Dosu's auto-labeling will improve in the first few weeks as it calibrates. Dosu will "learn" when a label it applies is removed by a maintainer or when a maintainer applies a label it hadn't. 
+</Note>
+
+### Comment Similar Threads
+This setting determines if Dosu will comment on new issues with context on similar issuses created in the past.
+Dosu will **only** comment if one or more similar issues are found.
+![4](/images/github-config-4.png)
+
+This behavior will be overwritten on issues where Dosu replies due to the settings below.
+
+### Allow Dosu to comment on issues
+This setting determines Dosu's commenting behavior on issues.
+![5](/images/github-config-5.png)
+
+This setting is indepenedent of the "Comment Similar Threads" setting, and will overwrite it when enabled.
+It also requires you select an **Auto-reply to...** option:
+- **Everyone**: Dosu will comment on a new issue regardless of who opened it.
+- **Everyone but maintainers**: Same as the above, excluding issues opened by a maintainer.
+- **No one**: Dosu will only comment if summoned in an issue comment with @dosu.
+
+Additonally, Dosu will only comment on issues that it determines are questions or bugs and will not attempt to help with other 
+issues such as feature requests.
+
+### Stale Bot
+These settings deteremine the behavior of Dosu's "smart" stale bot feature.
+![6](/images/github-config-6.png)
+If enabled, Dosu will mark label the issue as stale after a peroid of inactivity and comment a summary of activity on the issue to that point in time.
+Along with enabling the stale bot you'll need to set:
+- Number of days of inactivity before an issue is marked as stale.
+- Number of days following the stale comment before the issue is closed.
+- Which labels, if any, indicate the stale bot should ignore an issue.
+
+### Encourage Issue Voting
+This setting detemerines if Dosu will upvote every new issue.
+![7](/images/github-config-7.png)
+
+This feature is borrowed from the K8s ecosystem. It's a simple way to encourage community members to vote on issues they care about.
+
+
+## Pull Requests
+![7](/images/github-config-8.png)
+
+### Auto-Label Pull Requests
+These settings determine if Dosu will auto-label pull requests and which labels it will consider.
+![9](/images/github-config-9.png)
+The logic and behavior is the same as the ["Auto-Label Issues"](#auto-label-issues) settings but applied to pull requests.
+
+
+### Add LGTM Label
+This setting determines if Dosu will add a `LGTM` ("looks good to me") label to a pull request after it's approved by a maintainer.
+![10](/images/github-config-10.png)
+
+
+This feature makes it easy to quickly determine which PRs have been approved and are ready to be merged when viewing the pull requests GitHub page.
+
+### Add Size Label
+This setting determines if Dosu will add a size label (eg. `size:S`, `size:M`) to new pull requests.
+![11](/images/github-config-11.png)
+
+These labels make it easy to see how large a pull request is. The size is determined by the number of lines affected.
+
+## Discussions
+![12](/images/github-config-12.png)
+
+### Comment Similar Threads
+This setting determines if Dosu will comment on new discussions with context on similar discussions created in the past.
+Dosu will **only** comment if one or more similar discussions are found.
+
+This behavior will be overwritten on issues where Dosu replies due to the settings below. 
+This feature is analoagous to the ["Comment Similar Threads"](#comment-similar-threads) setting for issues.
+
+### Allow Dosu to comment on discussions
+This setting determines Dosu's commenting behavior on discussions.
+![13](/images/github-config-13.png)
+
+
+See ["Allow Dosu to comment on issues"](#allow-dosu-to-comment-on-issues) for more details on the reply settings.
+
+The **"included categories"** setting will determine which categories Dosu will comment on -- the deafult for which is `Q&A`.
