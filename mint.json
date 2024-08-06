@@ -33,26 +33,26 @@
         {
           "group": "Onboarding",
           "pages": [
-            "docs/onboarding-overview",
-            "docs/onboarding-quickstart"
+            "pages/onboarding-introduction",
+            "pages/onboarding-quickstart"
           ]
         },
         {
           "group": "Key Concepts",
           "pages": [
-            "docs/concepts-workspace",
-            "docs/concepts-data-sources"
+            "pages/concepts-workspace",
+            "pages/concepts-data-sources"
           ]
         },
         {
           "group": "Features",
           "pages": [
-            "docs/features-auto-labeling",
-            "docs/features-issue-triage-qa",
-            "docs/features-changelog-generation"
+            "pages/features-auto-labeling",
+            "pages/features-issue-triage-qa",
+            "pages/features-changelog-generation"
           ]
         },
-        "docs/configuration"
+        "pages/configuration"
       ]
     },
     {
@@ -61,11 +61,11 @@
         {
           "group": "Workspace Creation",
           "pages": [
-            "docs/workspace-creation-github-repository",
-            "docs/workspace-creation-slack-channel"
+            "pages/workspace-creation-github-repository",
+            "pages/workspace-creation-slack-channel"
           ]
         },
-        "docs/response-previews"
+        "pages/response-previews"
       ]
     },
     {
@@ -75,16 +75,16 @@
           "group": "GitHub",
           "icon": "github",
           "pages": [
-            "docs/github-installation",
-            "docs/github-configuration"
+            "pages/github-installation",
+            "pages/github-configuration"
           ]
         },
         {
           "group": "Slack",
           "icon": "slack",
           "pages": [
-            "docs/slack-installation",
-            "docs/slack-configuration"
+            "pages/slack-installation",
+            "pages/slack-configuration"
           ]
         }
       ]
